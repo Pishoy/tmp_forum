@@ -25,7 +25,7 @@ f https://hub.grid.tf/mikhaieb/bishoyabdo-forum-latest.flist  -p '2222:22'  '803
 -envs DISCOURSE_SMTP_USER_NAME=apikey -envs DISCOURSE_SMTP_ADDRESS=smtp.sendgrid.net -envs DISCOURSE_DEVELOPER_EMAILS=bishoy@incubaid.com -envs DISCOURSE_SMTP_PORT=587 \ 
 -envs LETSENCRYPT_ACCOUNT_EMAIL=bishoy@incubaid.com -envs AWS_ACCESS_KEY_ID=urawskey -envs AWS_SECRET_ACCESS_KEY=urawssecret \ 
 -envs RESTIC_REPOSITORY="s3:https://s3.grid.tf/forums-test"  -envs RESTIC_PASSWORD="urresticpassword" \
--envs THREEBOT_PRIVATE_KEY="yourkey" -envs FALSK_SECRET_KEY="yoursceret" \
+-envs THREEBOT_PRIVATE_KEY="yourkey" -envs FLASK_SECRET_KEY="yoursceret" \
 -envs THREEBOT_URL=https://login.staging.jimber.org -envs OPEN_KYC_URL=https://openkyc.staging.jimber.org/verification/verify-sei
 ```
 - make sure pass the mounted directories correctly 
